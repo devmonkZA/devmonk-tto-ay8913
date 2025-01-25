@@ -48,7 +48,7 @@ def print_chip_state(dut):
         return
 
     try:
-        internal = dut.tt_um_rejunity_ay8913_uut
+        internal = dut.tt_um_devmonk_ay8913_uut
         print(
             dut.ui_in.value, ">||"
             '{:2d}'.format(int(internal.latched_register.value)), 
@@ -151,7 +151,7 @@ async def play_and_record_wav(dut):
 
     wave_file = [f"../output/{os.path.basename(vgm_filename).rstrip('.vgm')}.{ch}.wav" for ch in ["master", "channelA", "channelB", "channelC", "noise", "envelope"]]
     def get_sample(dut, channel):
-            internal = dut.tt_um_rejunity_ay8913_uut
+            internal = dut.tt_um_devmonk_ay8913_uut
             if channel == 0:
                 return int(dut.uo_out.value) << (15-8)    # 8-bit signal
             elif channel == 1:

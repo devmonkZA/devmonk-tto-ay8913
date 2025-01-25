@@ -9,7 +9,7 @@ MAX_VOLUME = 255/2
 
 def print_chip_state(dut):
     try:
-        internal = dut.tt_um_rejunity_ay8913_uut
+        internal = dut.tt_um_devmonk_ay8913_uut
         print(
             dut.ui_in.value, ">||"
             '{:2d}'.format(int(internal.latched_register.value)), 
