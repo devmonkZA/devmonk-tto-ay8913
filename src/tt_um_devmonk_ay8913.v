@@ -7,7 +7,7 @@
 //
 // However this implementation uses syncronous reset and single edge of the clock.
 
-module tt_um_rejunity_ay8913 #( parameter DA7_DA4_UPPER_ADDRESS_MASK = 4'b0000,
+module tt_um_devmonk_ay8913 #( parameter DA7_DA4_UPPER_ADDRESS_MASK = 4'b0000,
                                 parameter CHANNEL_OUTPUT_BITS = 8,
                                 parameter MASTER_OUTPUT_BITS = 8
 ) (

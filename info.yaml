@@ -23,7 +23,7 @@ project:
     - "envelope.v"
     - "signal_edge.v"
     - "pwm.v"
-    - "tt_um_rejunity_ay8913.v"
+    - "tt_um_devmonk_ay8913.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:

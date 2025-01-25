@@ -30,7 +30,7 @@ module tb ();
     wire VGND = 1'b0;
 `endif
 
-    tt_um_rejunity_ay8913 tt_um_rejunity_ay8913_uut 
+    tt_um_devmonk_ay8913 tt_um_devmonk_ay8913_uut 
     (
         // include power ports for the Gate Level test
         `ifdef GL_TEST
